@@ -1,0 +1,42 @@
+# Demonstrate how to use while loops in and if statements Python
+# Author: Asher Thompson
+# Date: 9/05/2025
+# Version 2.0
+
+'''# While loops
+keep_going = "" # The variable contains an empty string
+# == is used to check if the variable meets the condition
+while keep_going == "":
+
+    like_coffee = input("Do you like coffee? ")
+
+    if like_coffee == "yes"
+        print("That is great. I like coffee too!")
+        keep_going = "end" # This will end the loop
+    if like_coffee == "no":
+        print("Fair enough.") # This will end the loop
+        keep_going = "end" '''
+
+# Version 2.0 Making the code more pythonic
+keep_going = ""
+while keep_going == "":
+    like_coffee = input("Do you like coffee? ").lower() # .lower() makes the input lowercase
+
+    if like_coffee == "yes" or like_coffee == "y":
+        print("That is great. I like coffee too!")
+        keep_going = "end"  
+    elif like_coffee == "no":
+        print("Fair enough.")
+
+        like_tea = input("Do you like tea? ").upper()
+
+        if like_tea == "YES" or like_tea == "Y":
+            print("Good for you. Give coffee another try :)")
+            keep_going = "end"
+        elif like_tea == "NO" or like_tea == "N":
+            print("I am sorry. That is all I have for now.")
+            keep_going = "end"
+    else:
+        print("I don't understand. Please answer with either 'yes' or 'no'.")
+
+    keep_going = "Press <enter> to continue or any other key to quit."
